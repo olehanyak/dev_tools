@@ -13,8 +13,7 @@ it('should save log message', () => {
 });
 
 it('should save errors', () => {
-    const logger = createLogger('user login');
-    
+    const logger = createLogger('user login'); 
     logger.error('login failed');
 
     expect(logger.getLogs()).toEqual(['error - user login - login failed']);
